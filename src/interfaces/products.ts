@@ -4,3 +4,7 @@ export interface NewProduct {
   amount: string;
   orderId?: number;
 }
+export interface ProductBody {
+  name: string;
+  amount: string;
+}
