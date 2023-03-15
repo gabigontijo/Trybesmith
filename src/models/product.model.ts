@@ -13,4 +13,9 @@ export const createProduct = async (product: NewProduct): Promise<NewProduct> =>
   return newProduct;
 };
 
-export default createProduct;
+export const getAll = async (): Promise<NewProduct[]> => {
+  const [result] = await connection.execute(
+    'SELECT * FROM Trybesmith.products ',
+  );
+  return result as NewProduct[];
+};

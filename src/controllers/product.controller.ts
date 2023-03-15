@@ -8,4 +8,7 @@ export const create = async (req: Request, res: Response) => {
   res.status(201).json(result);
 };
 
-export default create;
+export const getAll = async (_req: Request, res: Response) => {
+  const result = await productService.getAll();
+  res.status(200).json(result);
+};
