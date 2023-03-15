@@ -9,6 +9,6 @@ export interface IUser {
 export interface IToken {
   id: number;
   username: string;
-  vocation: string;
-  level: number;
+  vocation?: string;
+  level?: number;
 }

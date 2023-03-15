@@ -1,4 +1,5 @@
 import { ResultSetHeader } from 'mysql2/promise';
+import { ILogin } from '../interfaces/login';
 import { IUser } from '../interfaces/users';
 import connection from './connection';
 
@@ -13,4 +14,13 @@ export const createUser = async (user: IUser): Promise<IUser> => {
   return newProduct;
 };
 
-export default createUser;
+export const getByUserName = async (login: ILogin): Promise<IUser | null> => {
+  const { username } = login;
+  const [result] = await connection.execute(
+    'SELECT * FROM Trybesmith.users WHERE username = ?',
+    [username],
+  );
+  const [user] = result as IUser[];
+
+  return user || null;
+};
