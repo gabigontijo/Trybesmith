@@ -24,3 +24,14 @@ export const getByUserName = async (login: ILogin): Promise<IUser | null> => {
 
   return user || null;
 };
+
+export const getById = async (id: number): Promise<IUser | null> => {
+  const [result] = await connection.execute(
+    'SELECT * FROM Trybesmith.users WHERE id = ?',
+    [id],
+  );
+  const [user] = result as IUser[];
+  console.log(user);
+
+  return user || null;
+};
