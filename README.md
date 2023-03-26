@@ -17,17 +17,17 @@ Nesse projeto é desenvolvida uma loja de itens medievais, no formato de uma API
 ## :rocket: Rodando o projeto
 Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando para iniciar o projeto:
 ```
-<npm install>
+npm install
 ```
 Para iniciar o docker:
 ```
-<docker-compose up -d>
+docker-compose up -d
 ```
 Para acessar o terminal do docker e intalar o npm:
 
 ```
-<docker exec -it trybesmith bash>
- <npm install>
+docker exec -it trybesmith bash
+npm install
 ```
 
 ## :soon: Implementação futura
