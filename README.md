@@ -25,6 +25,7 @@ Para iniciar o docker:
 ```
 Para acessar o terminal do docker e intalar o npm:
 
+```
 <docker exec -it trybesmith bash>
  <npm install>
 ```
