@@ -1,4 +1,4 @@
-<h1 align="center">:convenience_store: Trybesmith- a sua loja medievak</h1>
+<h1 align="center">:convenience_store: Trybesmith- a sua loja medieval</h1>
 
 ## :memo: Descrição
 Nesse projeto é desenvolvido uma loja de itens medievais, no formato de uma API, utilizando Typescript.
