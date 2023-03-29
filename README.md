@@ -1,39 +1,40 @@
-<h1 align="center">:convenience_store: Trybesmith- a sua loja medieval</h1>
+<h1 align="center">:convenience_store: Trybesmith- your medieval shop</h1>
 
-## :memo: Descrição
-Nesse projeto é desenvolvido uma loja de itens medievais, no formato de uma API, utilizando Typescript.
+## :memo: Description
+In this project, a store of medieval items is developed, in the form of an API, using Typescript, Node, Express, MySQL DB and JWT authentication for login.
 
-## :books: Funcionalidades
-* <b>Criação</b>: Cria um novo item pora a loja TrybeSmith
-* <b>Leitura</b>: Retorna o(s) produto(s) da loja TrybeSmith
-* <b>Atualização</b>: Atualiza item na loja TrybeSmith
-* <b>Exclusão</b>: Exclui item da loja TrybeSmith
+## :books: Functionalities
+* <b>Create</b>: Creates a new item for the TrybeSmith shop
+* <b>Read</b>: Returns the product(s) from the TrybeSmith store
+* <b>Update</b>: Updates the product(s) from the TrybeSmith store
+* <b>Delete</b>: Delete item from TrybeSmith store
  
-
-## :wrench: Tecnologias utilizadas
+## :wrench: Technologies
 * Typescript;
 * Node;
+* Express
+* JWT authentication;
 * MySQL;
 * Docker;
 
-## :rocket: Rodando o projeto
-Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando para iniciar o projeto:
+## :rocket: Running the project
+To run the repository it is necessary to clone it, give the following command to start the project:
 ```
 npm install
 ```
-Para iniciar o docker:
+To start docker:
 ```
 docker-compose up -d
 ```
-Para acessar o terminal do docker e instalar o npm:
+To access the docker terminal and install npm:
 
 ```
 docker exec -it trybesmith bash
 npm install
 ```
 
-## :soon: Implementação futura
-* Futuramente será adicionado um front end ao projeto
+## :soon: Future implementation
+* A front end will be added to the project in the future
 
-## :dart: Status do projeto
-   Momentaneamente finalizado
+## :dart: Project status
+   momentarily ended
